@@ -19,7 +19,7 @@ html {
 }
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex: 1 1 auto;
   background-image: url(nyc-bg.jpg);
   background-size: cover;
@@ -165,6 +165,7 @@ input:focus {
 .error {
   color: red;
   margin: 1rem;
+  height: 20px;
 }
 a:any-link {
   color: rgb(173, 84, 0);
