@@ -3,6 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
 body {
   display: flex;
   height: 100vh;
@@ -15,26 +29,81 @@ body {
   justify-content: center;
   align-items: start;
   background-color: rgba(37, 37, 37, 0.137);
-  flex: 1 1 auto;
+  flex: 1 1 33%;
+  z-index: 10;
 }
 .article {
   display: flex;
-  justify-content: start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.95);
-  flex: 2 1 auto;
+  flex: 1 2 auto;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.heading h3 {
+  margin: 0.25rem 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.form {
+  width: 100%;
+  padding: 3rem;
+}
+.form__wrapper {
+  box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.form h2 {
+  margin-bottom: 2rem;
 }
 .inputs {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   gap: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .inputs {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .flex {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  flex-wrap: wrap;
 }
 .inputs-wrapper {
   display: flex;
   flex-direction: column;
+  margin-right: min(3rem, 2vw);
+}
+label {
+  font-size: 0.75rem;
+  letter-spacing: 0.5ch;
+  font-weight: 600;
+  color: rgb(39, 39, 39);
+}
+input {
+  padding-block: 0.4rem;
+  padding-inline: calc(1rem + 4vw);
+  corner-shape: squircle;
+  border-radius: 10rem;
+  border: 1px solid rgb(192, 192, 192);
+  outline: none;
+  transition:
+    border-color 0.2s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+input[type="password"]:invalid {
+  border-color: red;
+}
+input:focus {
+  border-color: rgb(89, 155, 255);
+  box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.1);
 }
