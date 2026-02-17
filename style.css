@@ -144,7 +144,7 @@ input:focus {
   padding: 1rem;
   background-color: rgb(235, 145, 61);
   font-size: clamp(1rem, 1vw, 2rem);
-  font-weight: 1000;
+  font-weight: 800;
   color: white;
   text-shadow: 2px 1px 1px rgba(179, 125, 44, 0.95);
   box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.1);
@@ -160,4 +160,13 @@ input:focus {
   color: rgba(0, 0, 0, 0.75);
   text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.55);
   cursor: pointer;
+}
+.error {
+  color: red;
+  margin: 1rem;
+}
+a:any-link {
+  color: rgb(173, 84, 0);
+  font-weight: 600;
+  text-decoration: none;
 }
