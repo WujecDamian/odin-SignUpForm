@@ -23,6 +23,7 @@ body {
   flex: 1 1 auto;
   background-image: url(nyc-bg.jpg);
   background-size: cover;
+  filter: sepia(0.3);
 }
 .aside {
   display: flex;
@@ -37,11 +38,25 @@ body {
   width: 100%;
   padding: 3rem;
   text-align: center;
-  font-family: "Playwrite AT", cursive;
+  font-family: "Trade Winds", system-ui;
   font-size: clamp(1rem, 4vw, 3rem);
   font-weight: 1000;
   color: white;
   text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.082);
+  transform: matrix3d(10deg);
+}
+.logo::before {
+  position: absolute;
+  content: "Pieciks";
+  color: rgb(255, 228, 154);
+  filter: blur(30px);
+  z-index: -1;
+}
+.logo:after {
+  position: absolute;
+  content: "5x";
+  font-size: 0.5em;
+  transform: translate(5px, 5px) skewX(-15deg) rotate(-20deg);
 }
 .article {
   display: flex;
@@ -127,11 +142,11 @@ input:focus {
   flex: 1 1 auto;
   max-width: calc(8rem + 10vw);
   padding: 1rem;
-  background-color: rgb(228, 125, 219);
+  background-color: rgb(235, 145, 61);
   font-size: clamp(1rem, 1vw, 2rem);
   font-weight: 1000;
   color: white;
-  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 2px 1px 1px rgba(179, 125, 44, 0.95);
   box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.1);
 
   transition:
@@ -140,7 +155,7 @@ input:focus {
     background-color 0.1s ease-in;
 }
 .form__footer input:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(247, 244, 242);
 
   color: rgba(0, 0, 0, 0.75);
   text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.55);
