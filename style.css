@@ -52,10 +52,8 @@ body {
 }
 .form {
   width: 100%;
-  padding: 3rem;
-}
-.form__wrapper {
   box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
 }
 .form h2 {
   margin-bottom: 2rem;
