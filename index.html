@@ -44,24 +44,20 @@
             <div class="inputs-contact flex">
               <div class="inputs-wrapper">
                 <label for="email">EMAIL</label>
-
                 <input type="email" name="email" id="email" required />
               </div>
               <div class="inputs-wrapper">
                 <label for="tel">PHONE NUMBER</label>
-
                 <input type="tel" name="tel" id="tel" required />
               </div>
             </div>
             <div class="inputs-password flex">
               <div class="inputs-wrapper">
                 <label for="password">PASSWORD</label>
-
                 <input type="password" name="password" id="password" required />
               </div>
               <div class="inputs-wrapper">
                 <label for="conf-password">CONFIRM PASSWORD</label>
-
                 <input
                   type="password"
                   name="conf-password"
@@ -74,7 +70,12 @@
         </form>
       </div>
       <div class="form__footer">
-        <input type="submit" value="Create Account" form="accountForm" />
+        <input
+          type="submit"
+          value="Create Account"
+          id="submit-btn"
+          form="accountForm"
+        />
         <p id="password--error" class="error">Pa</p>
         <p class="footer__login">
           Already have an account? <a href="">Log in</a>
