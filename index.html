@@ -22,36 +22,41 @@
         <h3>You will be winning so much that you will be tired of winning</h3>
       </div>
       <div class="form">
-        <form action="index.html" method="post" name="accountForm">
+        <form
+          action="index.html"
+          method="post"
+          name="accountForm"
+          id="accountForm"
+        >
           <h2>Don't miss out!</h2>
           <div class="inputs">
             <div class="inputs-name flex">
               <div class="inputs-wrapper">
                 <label for="name">FIRST NAME</label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" required />
               </div>
               <div class="inputs-wrapper">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name" />
+                <input type="text" name="last-name" id="last-name" required />
               </div>
             </div>
             <div class="inputs-contact flex">
               <div class="inputs-wrapper">
                 <label for="email">EMAIL</label>
 
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
               </div>
               <div class="inputs-wrapper">
                 <label for="tel">PHONE NUMBER</label>
 
-                <input type="tel" name="tel" id="tel" />
+                <input type="tel" name="tel" id="tel" required />
               </div>
             </div>
             <div class="inputs-password flex">
               <div class="inputs-wrapper">
                 <label for="password">PASSWORD</label>
 
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" required />
               </div>
               <div class="inputs-wrapper">
                 <label for="conf-password">CONFIRM PASSWORD</label>
@@ -60,14 +65,15 @@
                   type="password"
                   name="conf-password"
                   id="conf-password"
+                  required
                 />
               </div>
             </div>
           </div>
         </form>
-        <div class="form__footer">
-          <input type="submit" value="Create Account" form="accountForm" />
-        </div>
+      </div>
+      <div class="form__footer">
+        <input type="submit" value="Create Account" form="accountForm" />
       </div>
     </article>
   </body>
